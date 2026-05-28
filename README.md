@@ -27,10 +27,10 @@
 ```
 infra_portfolio/
 ├── docs/                          # 公開用ドキュメント（git管理・センシティブ情報は伏字）
-│   ├── 01_requirements.md
-│   ├── 02_basic-design.md
-│   ├── 04_operations.md
-│   ├── 05_test-spec.md
+│   ├── 01_requirements.md　　　　　# 要件定義書
+│   ├── 02_basic-design.md　　　　　# 基本設計書
+│   ├── 04_operations.md　　　　　　# 運用設計書
+│   ├── 05_test-spec.md　　　　　　 # テスト仕様書
 │   └── diagrams/
 │       └── 02_AWS_Arch.png
 ├── envs/
