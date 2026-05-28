@@ -1,0 +1,88 @@
+# =============================================
+# Terraform
+# =============================================
+
+# ローカルのstateファイル（S3管理のため不要）
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraformの作業ディレクトリ
+.terraform/
+.terraform.lock.hcl
+
+# planファイル（機密情報を含む可能性があるため）
+*.tfplan
+*.plan
+
+# クラッシュログ
+crash.log
+crash.*.log
+
+# =============================================
+# 機密情報
+# =============================================
+
+# 環境変数・シークレット
+*.tfvars
+*.tfvars.json
+
+# ただし例示用ファイルはトラッキング対象
+!*.tfvars.example
+
+# SSHキー・証明書
+*.pem
+*.key
+*.crt
+*.p12
+
+# AWSクレデンシャル
+.aws/
+
+# =============================================
+# OS / エディタ
+# =============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# =============================================
+# その他
+# =============================================
+
+# ログファイル
+*.log
+
+# 一時ファイル
+*.tmp
+*.bak
+
+
+# Docs 非公開(秘匿情報あるため)
+docs_private/
+
+
+# tflint plugins
+.tflint.d/
+
+# .env
+*.env
